@@ -25,6 +25,15 @@ export default defineNuxtConfig({
   },
   
   vite: {
-    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg']
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
+    build: {
+      rollupOptions: {
+        external: ['@oxc-parser/binding-linux-x64-gnu']
+      }
+    }
+  },
+  
+  experimental: {
+    payloadExtraction: false
   }
 })
