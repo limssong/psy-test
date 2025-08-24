@@ -1,0 +1,39 @@
+@use "@/assets/scss/_variables.scss" as *;
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $dark-color;
+}
+
+.score-box {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  
+  &.teto {
+    background-color: #e3f2fd;
+    border: 2px solid #2196f3;
+  }
+  
+  &.egen {
+    background-color: #f3e5f5;
+    border: 2px solid #9c27b0;
+  }
+}
+
+.score-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.result-image img {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.options-container .btn:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}

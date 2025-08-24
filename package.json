@@ -1,0 +1,19 @@
+{
+  "name": "psy-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 3000",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate",
+    "deploy": "npm run generate"
+  },
+  "devDependencies": {
+    "nuxt": "^4.0.3",
+    "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "question": "당신의 성별은 무엇인가요?",
+    "options": [
+      { "text": "남자", "type": "male", "score": { "teto": 0, "egen": 0 } },
+      { "text": "여자", "type": "female", "score": { "teto": 0, "egen": 0 } }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "회식자리에서 팀 분위기가 막 싸늘해졌습니다. 당신의 행동은?",
+    "options": [
+      { "text": "\"그만 분위기 풀고 밥이나 먹자\"며 상황을 리드해서 해결한다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "모두가 불편하지 않게 조용히 분위기를 살피고 부드럽게 화제를 돌린다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "급하게 프로젝트를 마무리해야 할 때, 당신의 모습은?",
+    "options": [
+      { "text": "일단 일을 마치기 위해 속도를 내고, 결과에 집중한다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "같이 하는 사람들의 부담이나 피로도 챙기며 균형을 맞춘다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "친구가 심각한 고민 상담을 청할 때, 당신은?",
+    "options": [
+      { "text": "'문제 해결' 위주로 현실적인 조언을 해준다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "감정을 공감해주며 들어주고, 마음을 위로해준다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "데이트 약속에 갑자기 늦게 될 것 같을 때, 당신은?",
+    "options": [
+      { "text": "지각 이유와 도착 예상시간을 간단명료하게 말한다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "미안한 마음을 길게 설명하고, 상대방의 기분을 신경 쓴다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "여행 계획을 짤 때 당신은?",
+    "options": [
+      { "text": "주요 명소, 스케줄 등 전체 플랜을 주도적으로 짠다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "함께 가는 사람들의 의견을 모아 조율하며 정한다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "직장(학교)에서 상사가(선생님이) 불합리한 지시를 내리면?",
+    "options": [
+      { "text": "직접 문제 제기하거나, 개선방안을 제시한다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "일단 맞춰주고, 나중에 따로 의견을 내거나 조용히 조정한다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "옷을 고를 때 더 신경 쓰는 것은?",
+    "options": [
+      { "text": "실용성과 활동성, 내 스타일의 일관성", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "계절·트렌드·분위기·상대방의 반응 등 다양한 요소", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "모임에서 서로 의사결정이 안 되고 우왕좌왕할 때 당신은?",
+    "options": [
+      { "text": "결정을 내리고 모두를 이끈다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "각자의 의견을 충분히 듣고 합의를 끌어낸다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "상대방과 사소한 다툼이 있을 때, 당신은?",
+    "options": [
+      { "text": "직설적이고 단도직입적으로 내 생각을 전달한다", "type": "teto", "score": { "teto": 1, "egen": 0 } },
+      { "text": "한 번 더 생각하고, 조심스럽게 내 감정을 표현한다", "type": "egen", "score": { "teto": 0, "egen": 1 } }
+    ]
+  }
+]
