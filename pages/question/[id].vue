@@ -85,9 +85,17 @@ const questions = ref([])
 onMounted(async () => {
   try {
     loading.value = true
-    const response = await fetch('/questions.json')
+    
+    // Nuxt runtimeConfig를 사용하여 baseURL 가져오기
+    const config = useRuntimeConfig()
+    const baseURL = config.public.baseURL || ''
+    const questionsPath = `${baseURL}/questions.json`
+    
+    console.log('Loading questions from:', questionsPath)
+    
+    const response = await fetch(questionsPath)
     if (!response.ok) {
-      throw new Error('질문 데이터를 불러올 수 없습니다.')
+      throw new Error(`질문 데이터를 불러올 수 없습니다. (${response.status}: ${response.statusText})`)
     }
     questions.value = await response.json()
     

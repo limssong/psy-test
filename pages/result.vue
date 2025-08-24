@@ -118,10 +118,14 @@ const resultDescription = computed(() => {
 })
 
 const resultImage = computed(() => {
+  // Nuxt runtimeConfig를 사용하여 baseURL 가져오기
+  const config = useRuntimeConfig()
+  const baseURL = config.public.baseURL || ''
+  
   // 랜덤 이미지 선택 함수
   const getRandomImage = (basePath, count) => {
     const randomIndex = Math.floor(Math.random() * count) + 1
-    return `${basePath}${randomIndex}.png`
+    return `${baseURL}${basePath}${randomIndex}.png`
   }
   
   switch (resultType.value) {
@@ -138,22 +142,25 @@ const resultImage = computed(() => {
     case 'mid-female': 
       return getRandomImage('/images/woman-mid', 4) // woman-mid1.png, woman-mid2.png, woman-mid3.png, woman-mid4.png 중 하나
     default: 
-      return '/images/man-mid1.png'
+      return `${baseURL}/images/man-mid1.png`
   }
 })
 
 // 중간값일 때의 이미지도 랜덤하게 선택
 const midImage = computed(() => {
+  const config = useRuntimeConfig()
+  const baseURL = config.public.baseURL || ''
+  
   if (resultType.value === 'teto-male' || resultType.value === 'egen-male') {
     // 남자 중간값
     const randomIndex = Math.floor(Math.random() * 2) + 1
-    return `/images/man-mid${randomIndex}.png`
+    return `${baseURL}/images/man-mid${randomIndex}.png`
   } else if (resultType.value === 'teto-female' || resultType.value === 'egen-female') {
     // 여자 중간값
     const randomIndex = Math.floor(Math.random() * 4) + 1
-    return `/images/woman-mid${randomIndex}.png`
+    return `${baseURL}/images/woman-mid${randomIndex}.png`
   }
-  return '/images/man-mid1.png'
+  return `${baseURL}/images/man-mid1.png`
 })
 
 // 다시 테스트하기

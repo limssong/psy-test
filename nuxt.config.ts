@@ -35,5 +35,12 @@ export default defineNuxtConfig({
   
   experimental: {
     payloadExtraction: false
+  },
+  
+  // 정적 파일 경로 설정
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NODE_ENV === 'production' ? '/psy-test' : ''
+    }
   }
 })
